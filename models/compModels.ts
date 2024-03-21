@@ -2,6 +2,7 @@ import { Document, Schema, model } from "mongoose";
 
 const compSchema = new Schema({
   key: { type: String, unique: true },
+  url: { type: String, required: true },
   name: { type: String, required: true },
   endsAt: Date,
   total_entries: Number,
