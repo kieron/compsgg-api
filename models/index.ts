@@ -1,1 +1,1 @@
-export { default as User } from './userModels'
+export { default as Comp } from "./compModels";
