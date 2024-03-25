@@ -7,7 +7,7 @@ import { Comp } from "../models";
  * @access Public
  */
 export const getComps = async (c: Context) => {
-  const comps = await Comp.find();
+  const comps = await Comp.find().sort("-_id");
 
   return c.json({ comps });
 };
